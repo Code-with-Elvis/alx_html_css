@@ -1,0 +1,27 @@
+/* ==== Universal Styles ==== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+main {
+  display: flex;
+  gap: 20px;
+}
+
+main aside {
+  overflow-y: auto;
+  width: 300px;
+}
+main article {
+  overflow-y: auto;
+  flex: 1;
+}
+@media screen and (max-width: 800px) {
+  main {
+    flex-direction: column;
+  }
+  main aside {
+    width: 100%;
+  }
+}
