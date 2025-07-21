@@ -20,4 +20,7 @@ This directory, `css_basic`, introduces basic styling to the previously created 
   ```
 
 Used CSS Flexbox, a recent set of CSS properties that work with recent browsers to create layouts.
+
 Add Responsiveness to the website.
+
+Make website unique by applying preferable styles.
