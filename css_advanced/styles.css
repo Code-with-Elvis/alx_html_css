@@ -114,7 +114,7 @@ Header Section
 }
 
 .nav-links li a::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 0;
   height: 2px;
@@ -312,8 +312,8 @@ Popular Tutorials Section
 }
 .popular_tutorials .thumbnail img {
   width: 100%;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
 }
 .popular_tutorials .thumbnail button {
   position: absolute;
@@ -370,7 +370,7 @@ Popular Tutorials Section
 .popular_tutorials .rating {
   display: flex;
   align-items: center;
-  gap: 4px;
+  justify-content: space-between;
   margin-top: 10px;
 }
 .popular_tutorials .rating div {
@@ -378,10 +378,16 @@ Popular Tutorials Section
   font-size: 1.4rem;
   display: flex;
   align-items: center;
-  gap: 2px;
+  gap: 4px;
 }
+
 .popular_tutorials .rating > div div:last-child {
   color: #979797;
+}
+
+.popular_tutorials .rating p {
+  color: var(--primary-color) !important;
+  margin-bottom: 2px;
 }
 
 /*
@@ -498,7 +504,7 @@ footer section > p {
   text-align: center;
   margin-top: 20px;
   font-size: 1.4rem;
-  color: rgba(255, 255, 255, 0.7);
+  color: #979797;
 }
 
 /*
@@ -664,9 +670,15 @@ Media Queries
     transform: translateY(0);
   }
 
-  .nav-links li:nth-child(1) { transition-delay: 0.1s; }
-  .nav-links li:nth-child(2) { transition-delay: 0.2s; }
-  .nav-links li:nth-child(3) { transition-delay: 0.3s; }
+  .nav-links li:nth-child(1) {
+    transition-delay: 0.1s;
+  }
+  .nav-links li:nth-child(2) {
+    transition-delay: 0.2s;
+  }
+  .nav-links li:nth-child(3) {
+    transition-delay: 0.3s;
+  }
 }
 
 /* Hero Section Media Queries */
@@ -686,7 +698,7 @@ Media Queries
   }
 
   .hero_content--main .badges {
-  font-size: 1.4rem;
+    font-size: 1.4rem;
     align-items: center;
     gap: 20px;
   }
