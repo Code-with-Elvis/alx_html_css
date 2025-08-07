@@ -1,0 +1,37 @@
+/*===== Font Faces =====*/
+
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url(./fonts/source-sans-pro/);
+}
+
+@font-face {
+  font-family: "Spin Cycle";
+  src: url(./fonts/Spin-Cycle-OT/);
+}
+
+/*===== Global Styles =====*/
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+body {
+  font-family: "Source Sans Pro", sans-serif;
+}
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/*===== Variables =====*/
+:root {
+  --primary-color: #ff5722;
+  --secondary-color: #f5f5f5;
+  --text-color: #333;
+  --rounded-full: 50%;
+}
